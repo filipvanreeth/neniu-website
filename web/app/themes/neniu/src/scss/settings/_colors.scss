@@ -1,0 +1,36 @@
+@use "sass:color";
+@use "sass:map";
+
+$color-1: #1f3a5e;
+$color-2: #ee6c4d;
+$color-3: #4d908e;
+$color-4: #f2c14e;
+$white: #ffffff;
+
+// Semantic
+$base: $color-1;
+$accent: $color-2;
+$need-help: $color-2;
+$concerned: $color-3;
+$prevention: $color-4;
+
+@function create-palette($base-color) {
+  @return (
+    50: color.mix(white, $base-color, 97%, $method: oklch),
+    100: color.mix(white, $base-color, 90%, $method: oklch),
+    200: color.mix(white, $base-color, 78%, $method: oklch),
+    300: color.mix(white, $base-color, 64%, $method: oklch),
+    400: color.mix(white, $base-color, 50%, $method: oklch),
+    500: color.mix(white, $base-color, 36%, $method: oklch),
+    600: color.mix(white, $base-color, 23%, $method: oklch),
+    700: color.mix(white, $base-color, 11%, $method: oklch),
+    800: $base-color,
+    900: color.mix(black, $base-color, 18%, $method: oklch),
+    950: color.mix(black, $base-color, 35%, $method: oklch)
+  );
+}
+
+$base-variation: create-palette($base);
+$accent-variation: create-palette($color-2);
+$concerned-variation: create-palette($color-3);
+$prevention-variation: create-palette($color-4);

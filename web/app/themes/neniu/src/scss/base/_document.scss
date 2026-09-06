@@ -1,0 +1,31 @@
+@use "../settings/breakpoints" as bp;
+
+:root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.45;
+  
+  @include bp.from(lg) {
+    font-size: 1.125rem;
+  }
+}
+
+.container {
+  width: 100%;
+  margin-inline: auto;
+
+  &--constrained {
+    width: min(100%, 80rem);
+    padding-inline: 2rem;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,38 @@
+name: neniu
+recipe: wordpress
+config:
+  webroot: web
+  php: "8.4"
+  database: mysql:8.0
+  via: nginx
+  xdebug: debug,develop
+  config:
+    php: .lando/php.ini
+services:
+  node:
+    type: node:20
+  phpmyadmin:
+    type: phpmyadmin
+    hosts:
+      - database
+  mailpit:
+    type: mailpit
+    portforward: true
+    mailfrom:
+      - appserver
+tooling:
+  npm:
+    service: node
+  npx:
+    service: node
+  node:
+    service: node
+  composer:
+    service: appserver
+  wp:
+    service: appserver
+  wordpress-setup:
+    service: appserver
+    description: Run WordPress initial setup
+    cmd:
+      - wp core install --prompt

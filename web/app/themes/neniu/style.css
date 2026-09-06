@@ -1,0 +1,40 @@
+/**
+ * Theme Name:        Neniu
+ * Description:       Custom theme for Neniu
+ * Version:           1.0.0
+ * Author:            Filip Van Reeth
+ * Author URI:        https://filipvanreeth.com
+ * Text Domain:       neniu
+ * Tested up to:      6.4
+ * Requires at least: 6.2
+ * Requires PHP:      7.4
+ * License:           GNU General Public License v2.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+p {
+  color: pink;
+  line-height: 1.5;
+}
+
+.sandbox-container {
+  container-type: inline-size;
+  container-name: test;
+  background: purple;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  * {
+    background-color: blue;
+  }
+}
+
+.introduction-text {
+  background-color: orange;
+}
+
+@container test (min-width: 48rem) {
+  .introduction-text {
+    background-color: aqua;
+  }
+}

@@ -1,0 +1,55 @@
+@use "../settings/typography" as typography;
+
+@font-face {
+  font-family: "Albert Sans";
+  src: url("../fonts/albert-sans-variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/unbounded-variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   margin-block: 0;
+//   font-family: typography.$heading;
+//   line-height: 1.35;
+// }
+
+.text-display {
+  font-size: typography.$display-size;
+  line-height: 1;
+  color: red;
+}
+
+.text-heading-lg {
+  font-size: typography.$heading-lg-size;
+  line-height: 1.1;
+  color: brown;
+}
+
+.text-md {
+  font-size: typography.$heading-md-size;
+  line-height: 1.25;
+}
+
+.text-heading-sm {
+  font-size: typography.$heading-sm-size;
+  line-height: 1.25;
+}
+
+.text-body-lg {
+  font-size: typography.$body-lg-size;
+  line-height: 1.5;
+}

@@ -1,0 +1,48 @@
+@use "../settings/colors" as colors;
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0;
+    margin: 0;
+
+    &__image {
+      display: block;
+      width: calc(100% - 1rem);
+      height: auto;
+      border-radius: 0.75rem;
+      rotate: 5deg;
+      box-shadow: 0 .5rem 1.5rem rgb(0 0 0 / 25%);
+      
+      
+      &--reverse {
+        rotate: -5deg;
+      }
+    }
+
+    &__skew-border {
+      position: absolute;
+      z-index: -1;
+      width: calc(100% - 1rem);
+      height: auto;
+      inset: 0;
+      background-color: colors.$accent;
+      border-radius: 0.75rem;
+      rotate: -2.5deg;
+      
+      &--need-help {
+        background-color: colors.$need-help;
+      }
+      
+      &--concerned {
+        background-color: colors.$concerned;
+        rotate: 2.5deg;
+      }
+      
+      &--prevention {
+        background-color: colors.$prevention;
+      }
+    }
+  }

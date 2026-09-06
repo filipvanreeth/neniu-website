@@ -1,0 +1,16 @@
+@use "../settings/breakpoints" as bp;
+@use "../settings/colors" as colors;
+@use "../settings/typography" as typography;
+
+.contact-cards {
+    position: relative;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    display: grid;
+    row-gap: 4rem;
+    
+    @include bp.from(lg) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}

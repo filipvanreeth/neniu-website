@@ -1,0 +1,70 @@
+@use "../settings/breakpoints" as bp;
+@use "../settings/colors" as colors;
+@use "../settings/typography" as typography;
+@use "sass:map";
+
+.icon-divider {
+    $self: &;
+    $color: map.get(colors.$base-variation, 200);
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    column-gap: .25rem;
+    align-items: center;
+    width: fit-content;
+    
+    &__line {
+        position: relative;
+        height: 1px;
+        width: 15vw;
+        background-color: $color;
+        
+        @include bp.from(lg) {
+            width: 5vw;
+        }
+    }
+    
+    &__icon {
+        display: inline-block;
+        width: 1.5rem;
+        height: auto;
+        color: $color;
+    }
+    
+    &--need-help {
+        $color: map.get(colors.$accent-variation, 300);
+        
+        #{$self}__line {
+            background-color: $color;
+        }
+        
+        #{$self}__icon {
+            color: $color;
+        }
+    }
+    
+    &--concerned {
+        $color: map.get(colors.$concerned-variation, 300);
+        
+        #{$self}__line {
+            background-color: $color;
+        }
+        
+        #{$self}__icon {
+            color: $color;
+        }
+    }
+    
+    &--prevention {
+        $color: map.get(colors.$prevention-variation, 300);
+        
+        #{$self}__line {
+            background-color: $color;
+        }
+        
+        #{$self}__icon {
+            color: $color;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@use "../settings/typography" as typography;
+@use "../settings/colors" as colors;
+@use "sass:map";
+
+.badge {
+  display: inline-flex;
+  margin: 0;
+  padding: 0.35rem 0.75rem;
+  font-family: typography.$heading;
+  font-size: 0.75rem;
+  background-color: map.get(colors.$base-variation, 100);
+  border-radius: 0.25rem;
+  color: map.get(colors.$base-variation, 500);
+
+  &--need-help {
+    color: map.get(colors.$accent-variation, 600);
+    background-color: map.get(colors.$accent-variation, 100);
+  }
+  
+  &--concerned {
+    $color: colors.$concerned-variation;
+    color: map.get($color, 600);
+    background-color: map.get($color, 100);
+  }
+  
+  &--prevention {
+    $color: colors.$prevention-variation;
+    color: map.get($color, 800);
+    background-color: map.get($color, 200);
+  }
+}

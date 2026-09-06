@@ -1,0 +1,22 @@
+{
+  "name": "neniu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:*\"",
+    "dev:theme": "sass --watch src/scss/theme.scss:assets/css/theme.css --source-map",
+    "dev:blocks": "wp-scripts start --webpack-copy-php",
+    "build": "npm run build:theme && npm run build:blocks",
+    "build:theme": "sass src/scss/theme.scss:assets/css/theme.css --style=compressed --no-source-map",
+    "build:blocks": "wp-scripts build --webpack-copy-php"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@wordpress/scripts": "latest",
+    "concurrently": "latest",
+    "sass": "^1.102.0"
+  }
+}

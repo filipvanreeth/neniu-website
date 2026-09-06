@@ -1,0 +1,125 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#1f3a5e"
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "color": "#ee6c4d"
+        },
+        {
+          "name": "Tertiary",
+          "slug": "tertiary",
+          "color": "#4d908e"
+        },
+        {
+          "name": "Quaternary",
+          "slug": "quaternary",
+          "color": "#f2c14e"
+        },
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "#ffffff"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "80rem",
+      "wideSize": "75rem"
+    },
+    "typography": {
+      "fluid": false,
+      "fontWeight": false,
+      "fontSizes": [],
+      "fontFamilies": [
+        {
+          "name": "Albert Sans",
+          "slug": "primary",
+          "fontFamily": "'Albert Sans', sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Albert Sans",
+              "fontWeight": "100 900",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/albert-sans-variable.ttf"]
+            }
+          ]
+        },
+        {
+          "name": "Unbounded",
+          "slug": "secondary",
+          "fontFamily": "'Unbounded', sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Unbounded",
+              "fontWeight": "100 900",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/unbounded-variable.ttf"]
+            }
+          ]
+        }
+      ]
+    },
+    "spacing": {
+      "blockGap": false,
+      "margin": false,
+      "padding": false
+    }
+  },
+  "styles": {
+    "color": {
+      "text": "var:preset|color|primary"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|primary",
+      "fontSize": "1rem",
+      "fontStyle": "normal",
+      "fontWeight": "400",
+      "lineHeight": "1.6"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|secondary",
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "letterSpacing": "-0.03em",
+          "lineHeight": "1.15"
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontSize": "clamp(2.5rem, 1.75rem + 3vw, 3rem)"
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    },
+    {
+      "name": "general",
+      "title": "General",
+      "area": "uncategorized"
+    }
+  ]
+}

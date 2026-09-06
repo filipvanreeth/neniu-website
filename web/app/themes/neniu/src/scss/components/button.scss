@@ -1,0 +1,27 @@
+@use "../settings/colors" as colors;
+@use "../settings/typography" as typography;
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    background-color: colors.$base;
+    color: white;
+    border-radius: .5rem;
+    text-decoration: none;
+    line-height: 1;
+    font-family: typography.$heading;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    
+    &--accent {
+        background-color: colors.$accent;
+    }
+    
+    &--need-help {
+        background-color: colors.$need-help;
+    }
+}

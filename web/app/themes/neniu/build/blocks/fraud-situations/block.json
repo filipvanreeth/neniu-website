@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "neniu/fraud-situations",
+  "version": "1.0.0",
+  "title": "Fraud Situations",
+  "category": "widgets",
+  "icon": "megaphone",
+  "description": "Shows the visitor's fraud situations",
+  "textdomain": "neniu",
+  "supports": {
+    "html": false,
+    "color": false,
+    "spacing": false,
+    "typography": false,
+    "customClassName": false
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,75 @@
+@use "../settings/breakpoints" as bp;
+@use "../settings/colors" as colors;
+@use "../settings/typography" as typography;
+
+.header-nav-desktop {
+  display: none;
+  $self: &;
+
+  @include bp.from(lg) {
+    display: block;
+    margin: 2rem 0;
+  }
+
+  &__container {
+    margin: 0;
+    padding: 0;
+
+    @include bp.from(lg) {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      column-gap: 4rem;
+    }
+  }
+
+  &__logo-container {
+  }
+
+  &__logo-link {
+  }
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  &__nav-container {
+    display: grid;
+    justify-items: end;
+  }
+
+  &__nav-main {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+
+    &-item {
+      list-style: none;
+      list-style-type: none;
+
+      &-link {
+        font-family: typography.$body;
+        color: colors.$base;
+        font-size: 1.15rem;
+        font-weight: 400;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 0.15rem;
+        display: block;
+        border-bottom: solid 2px transparent;
+
+        &:hover {
+          color: colors.$accent;
+          font-weight: inherit;
+          border-bottom: solid 2px colors.$accent;
+        }
+      }
+    }
+  }
+}

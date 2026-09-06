@@ -1,0 +1,127 @@
+@use "../settings/breakpoints" as bp;
+@use "../settings/typography" as typography;
+@use "../settings/colors" as colors;
+
+.footer-nav-main {
+  margin: 0;
+  padding: 2rem 0;
+  container: footer-nav / inline-size;
+  background-color: colors.$base;
+  color: colors.$white;
+  font-size: 1rem;
+  
+  @include bp.from(lg) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-areas:
+      "nav"
+      "content";
+    padding: 0;
+    row-gap: 2rem;
+    color: rgba(255, 255, 255, 0.75);
+
+    @include bp.container-from(lg, footer-nav) {
+      grid-template-areas: "content nav";
+      grid-template-columns: minmax(auto, 30%) 1fr;
+      column-gap: 4rem;
+    }
+  }
+
+  &__content-container {
+    grid-area: content;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+    @include bp.container-from(lg, footer-nav) {
+        text-align: initial;
+    }
+
+    h4 {
+      font-family: typography.$body;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      color: colors.$white;
+    }
+
+    p {
+      margin: 0;
+      margin-top: 0.5rem;
+      padding: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    .copyrights {
+        font-size: typography.$body-sm-size;
+        color: rgba(255, 255, 255, 0.25);
+    }
+  }
+
+  &__menu-container {
+    grid-area: nav;
+    display: grid;
+    row-gap: 2rem;
+
+    @include bp.from(lg) {
+      grid-template-columns: repeat(2, minmax(30%, 1fr));
+      gap: 4rem;
+      justify-items: end;
+    }
+  }
+
+  &__nav-menu {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    @include bp.from(lg) {
+      margin-top: 0;
+      text-align: left;
+    }
+
+    &-title {
+      font-family: typography.$body;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: auto;
+      margin: 0;
+      padding: 0;
+      color: colors.$white;
+    }
+
+    &-list-items {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      list-style-type: none;
+    }
+
+    &-list-item {
+      margin: 0;
+      padding: 0;
+
+      a {
+        margin: 0;
+        padding: 0;
+        color: inherit;
+        text-decoration: none;
+        line-height: auto;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+$body: "Albert Sans", sans-serif;
+$heading: "Unbounded", sans-serif;
+
+$display-size: clamp(2.5rem, 1.5rem + 4vw, 5rem);
+$heading-lg-size: clamp(2.25rem, 1.5rem + 2vw, 3.5rem);
+$heading-md-size: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+$heading-sm-size: clamp(1.25rem, 1.125rem + 0.5vw, 1.5rem);
+
+$body-lg-size: clamp(1.125rem, 1rem + 0.4vw, 1.25rem);
+$body-size: 1rem;
+$body-sm-size: 0.875rem;

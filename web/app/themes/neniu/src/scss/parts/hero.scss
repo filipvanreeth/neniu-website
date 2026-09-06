@@ -1,0 +1,75 @@
+@use "../settings/breakpoints" as bp;
+@use "../settings/colors" as colors;
+@use "service-card";
+
+.hero {
+  container: hero / inline-size;
+  margin: 2rem 0;
+  padding: 0;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "media"
+      "content"
+      "services";
+    gap: 4rem;
+    padding: 0;
+
+    @include bp.container-from(lg, hero) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-areas:
+        "content media"
+        "services services";
+      column-gap: 8rem;
+      row-gap: 8rem;
+    }
+  }
+
+  &__content {
+    grid-area: content;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__text-lead {
+    color: colors.$accent;
+    margin: 0;
+    margin-top: 1.5rem;
+    padding: 0;
+    font-size: 1.25rem;
+    line-height: 1.45;
+  }
+
+  &__media {
+    grid-area: media;
+    min-width: 0;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__service-cards {
+    grid-area: services;
+    display: grid;
+    row-gap: 2rem;
+
+    @include bp.container-from(lg, hero) {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
+      row-gap: 0;
+    }
+  }
+
+  @include bp.from(lg) {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+  }
+}
