@@ -19,8 +19,20 @@ $navMain = [
         'link_url' => '#contact-section'
     ],
 ];
+
+$currentUrl = get_permalink();
 ?>
 <header>
+    <div class="header-nav-mobile">
+        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo-neniu.svg' ?>"
+                            alt="Logo Neniu" class="header-nav-mobile__logo">
+        <div class="header-nav-mobile__nav">
+            <div class="header-nav-mobile__nav-items">
+                <a href="<?= $currentUrl . '?language=nl' ?>" class="header-nav-mobile__nav-item">nl</a>
+                <a href="<?= $currentUrl . '?language=fr' ?>" class="header-nav-mobile__nav-item">fr</a>
+            </div>
+        </div>
+    </div>
     <div class="header-nav-desktop">
         <div class="container container--constrained">
             <div class="header-nav-desktop__container">
@@ -31,6 +43,14 @@ $navMain = [
                     </a>
                 </div>
                 <div class="header-nav-desktop__nav-container">
+                    <ul class="header-nav-desktop__nav-language">
+                        <div class="header-nav-desktop__nav-language-items">
+                            <a href="<?= $currentUrl . '?language=nl' ?>"
+                                class="header-nav-desktop__nav-language-item">nl</a>
+                            <a href="<?= $currentUrl . '?language=fr' ?>"
+                                class="header-nav-desktop__nav-language-item">fr</a>
+                        </div>
+                    </ul>
                     <ul class="header-nav-desktop__nav-main">
                         <?php
                         foreach ($navMain as $item) {

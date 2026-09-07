@@ -93,4 +93,7 @@ return [
         'button-label' => 'Envoyez-nous un e-mail',
         'description' => 'Nous sommes joignables 24 h/24. Vous recevrez une réponse dans les meilleurs délais.',
     ],
+    'company-info' => [
+        'company-type' => 'asbl'
+    ]
 ];

@@ -1,6 +1,7 @@
 @use "../settings/breakpoints" as bp;
 @use "../settings/colors" as colors;
 @use "../settings/typography" as typography;
+@use "sass:map";
 
 .header-nav-desktop {
   display: none;
@@ -38,6 +39,35 @@
   &__nav-container {
     display: grid;
     justify-items: end;
+  }
+  
+  &__nav-language {
+    // display: grid;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+    
+    &-items {
+        display: flex;
+        flex-direction: row;
+        gap: .35rem;
+    }
+    
+    &-item {
+        display: block;
+        margin: 0;
+        padding: .35em;
+        color: map.get(colors.$base-variation, 500);
+        font-size: .75rem;
+        text-transform: uppercase;
+        width: fit-content;
+        line-height: 1;
+        border-radius: .25em;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        border: 1px solid map.get(colors.$base-variation, 200);
+    }
   }
 
   &__nav-main {

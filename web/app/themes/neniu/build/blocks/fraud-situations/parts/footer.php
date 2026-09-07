@@ -8,7 +8,7 @@ use function Neniu\renderFooterNavMenu;
         <div class="container container--constrained">
             <div class="footer-nav-main__inner">
                 <div class="footer-nav-main__content-container">
-                    <h4>Neniu vzw</h4>
+                    <h4>Neniu <?= translate('company-info.company-type') ?></h4>
                     <p>Haverenblok 123 • B-1980 Eppegem<br />
                         <a href="mailto:info@neniu.help">info@neniu.help</a>
                     </p>
@@ -35,10 +35,10 @@ use function Neniu\renderFooterNavMenu;
                     <?= renderFooterNavMenu(
                         title: translate('footer-nav-about.title'),
                         menu: [
-                            [
-                                'label' => translate('footer-nav-about.who'),
-                                'link' => '#'
-                            ],
+                            // [
+                            //     'label' => translate('footer-nav-about.who'),
+                            //     'link' => '#'
+                            // ],
                             [
                                 'label' => translate('footer-nav-about.contact'),
                                 'link' => '#contact'

@@ -91,4 +91,7 @@ return [
         'button-label' => 'Stuur een e-mail',
         'description' => '24/24 bereikbaar. Je ontvangt zo snel mogelijk een antwoord.',
     ],
+    'company-info' => [
+        'company-type' => 'vzw'
+    ]
 ];
