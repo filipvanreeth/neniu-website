@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Neniu;
 
+use function printf;
+
 add_action('after_setup_theme', function (): void {
     add_theme_support('editor-styles');
     add_editor_style('assets/css/theme.css');
@@ -37,23 +39,23 @@ add_action('wp_enqueue_scripts', function (): void {
     );
 });
 
-// add_action('init', function (): void {
-//     register_block_style(
-//         'core/group',
-//         [
-//             'name'  => 'primary',
-//             'label' => __('Primary', 'neniu'),
-//         ]
-//     );
+function renderFavicon(): void
+{
+    $faviconUrl = get_theme_file_uri(
+        'assets/images/favicon.png'
+    );
 
-//     register_block_style(
-//         'core/group',
-//         [
-//             'name'  => 'secondary',
-//             'label' => __('Secondary', 'neniu'),
-//         ]
-//     );
-// });
+    printf(
+        '<link rel="icon" href="%s" type="image/png" sizes="512x512">' . PHP_EOL,
+        esc_url($faviconUrl)
+    );
+}
+
+add_action(
+    'wp_head',
+    __NAMESPACE__ . '\\renderFavicon',
+    5
+);
 
 function translate(string $key): string
 {
