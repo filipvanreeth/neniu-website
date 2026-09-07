@@ -21,33 +21,33 @@ return [
         'prevention' => $navItems['prevention'],
     ],
     'footer-nav-about' => [
-        'title' => 'Over Neniu',
+        'title' => 'A propos de Neniu',
         'who' => 'Qui sommes-nous',
         'contact' => $navItems['contact'],
     ],
     'hero-section' => [
-        'title' => 'Hulp en advies bij online fraude',
+        'title' => "Aide et avis en cas de fraude en ligne",
         'text-lead' => "Avez-vous vécu une situation suspecte ? Vous inquiétez-vous pour une personne de votre entourage ? Ou souhaitez-vous savoir comment mieux reconnaître et prévenir la fraude en ligne ?",
         'text' => "Chez Neniu, vous pouvez poser vos questions et nous faire part de vos préoccupations concernant la fraude en ligne. Nos bénévoles vous écoutent sans jugement, vous aident à mieux comprendre la situation et examinent avec vous les démarches possibles."
     ],
     'service-card-help' => [
         'title' => "J'ai besoin d'aide",
         'text' => "Pensez-vous être victime d'une fraude en ligne ? Nous vous aidons à comprendre la situation et à déterminer les prochaines démarches à entreprendre.",
-        'linkText' => 'Meer info',
+        'linkText' => "Plus d'informations",
     ],
     'service-card-concerns' => [
         'title' => "Je suis inquiet/inquiète",
         'text' => "Vous vous inquiétez pour une personne de votre entourage ? Nous vous aidons à reconnaître les signes d'une fraude et à déterminer comment réagir.",
-        'linkText' => 'Meer info',
+        'linkText' => "Plus d'informations",
     ],
     'service-card-prevention' => [
         'title' => 'Ensemble, prévenons la fraude',
         'text' => "Grâce à des séances d'information pratiques, nous aidons les personnes et les organisations à mieux se protéger contre la fraude en ligne.",
-        'linkText' => 'Meer info',
+        'linkText' => "Plus d'informations",
     ],
     // Help section
     'help-section' => [
-        'badge-label' => 'Ondersteuning',
+        'badge-label' => 'Soutien',
         'title' => "J'ai besoin d'aide",
         'text-lead' => "Avez-vous vécu une situation qui vous paraît suspecte ? Avez-vous transféré de l'argent, partagé des données personnelles ou été en contact avec une personne dont vous commencez maintenant à douter ? Ne restez pas seul(e) face à cette situation. Plus vous réagissez rapidement, plus vous avez de chances de limiter les dommages.",
         'text' => "<p>Vous avez un doute ? Arrêtez-vous d'abord. N'effectuez plus aucun paiement, ne communiquez plus de données personnelles ni de codes et interrompez provisoirement le contact avec la personne ou l'organisation suspecte. Conservez les messages, numéros de téléphone, adresses électroniques, documents et preuves de paiement. Si vous avez communiqué vos coordonnées bancaires ou déjà transféré de l'argent, contactez votre banque au plus vite.</p>
@@ -56,7 +56,7 @@ return [
     ],
     // Concerns section
     'concerns-section' => [
-        'badge-label' => 'Begeleiding',
+        'badge-label' => 'Accompagnement',
         'title' => "Je m'inquiète pour quelqu'un",
         'text-lead' => "Vous vous inquiétez pour une personne qui pourrait être manipulée, qui effectue des virements, entretient une relation en ligne suspecte ou ne semble pas croire vos mises en garde ? Il peut être difficile de savoir comment agir sans provoquer de conflit ni perdre le contact avec cette personne.",
         'text' => "<p>Évitez autant que possible les reproches et les confrontations brutales. Une personne sous l'influence d'un fraudeur peut être profondément convaincue par l'histoire qui lui est racontée. Essayez avant tout de maintenir le dialogue, de poser calmement des questions et de vérifier les faits ensemble. Si des paiements sont toujours en cours, il est important d'agir rapidement afin de limiter les pertes financières.</p>
