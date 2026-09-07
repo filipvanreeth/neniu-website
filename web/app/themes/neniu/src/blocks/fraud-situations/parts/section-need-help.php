@@ -18,7 +18,7 @@ use function Neniu\renderIconDivider;
             </div>
             <div class="service-section__media">
                 <?php
-                $imagePath = get_stylesheet_directory_uri() . '/assets/images/hero-need-help.png';
+                $imagePath = get_stylesheet_directory_uri() . '/assets/images/hero-need-help.webp';
                 renderHeroImage($imagePath, 'need-help', null, false);
                 ?>
             </div>

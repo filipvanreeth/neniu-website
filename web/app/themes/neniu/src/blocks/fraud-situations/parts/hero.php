@@ -15,7 +15,7 @@ use function Neniu\translate;
             </div>
             <div class="hero__media">
                 <?= renderHeroImage(
-                    imagePath: get_stylesheet_directory_uri() . '/assets/images/hero-home.png',
+                    imagePath: get_stylesheet_directory_uri() . '/assets/images/hero-home.webp',
                     section: 'need-help',
                     altText: '',
                 ) ?>

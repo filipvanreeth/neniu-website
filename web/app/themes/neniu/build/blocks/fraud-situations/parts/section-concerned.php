@@ -21,7 +21,7 @@ use function Neniu\translate;
             </div>
             <div class="service-section__media">
                 <?php
-                $imagePath = get_stylesheet_directory_uri() . '/assets/images/hero-concerned.png';
+                $imagePath = get_stylesheet_directory_uri() . '/assets/images/hero-concerned.webp';
                 renderHeroImage(
                     imagePath: $imagePath,
                     section: 'concerned',

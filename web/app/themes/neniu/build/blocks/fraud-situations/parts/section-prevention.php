@@ -18,7 +18,7 @@ use function Neniu\translate;
             </div>
             <div class="service-section__media">
                 <?php
-                $imagePath = get_stylesheet_directory_uri() . '/assets/images/hero-prevention.png';
+                $imagePath = get_stylesheet_directory_uri() . '/assets/images/hero-prevention.webp';
                 renderHeroImage($imagePath, 'prevention', null, false);
                 ?>
             </div>
