@@ -1,15 +1,19 @@
-# Translation of WordPress - 7.0.x - Development - Administration - Network Admin in Dutch
-# This file is distributed under the same license as the WordPress - 7.0.x - Development - Administration - Network Admin package.
+# Translation of WordPress - 7.1.x - Development - Administration - Network Admin in Dutch
+# This file is distributed under the same license as the WordPress - 7.1.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-11-16 09:09:15+0000\n"
+"PO-Revision-Date: 2026-08-13 20:18:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.3\n"
+"X-Generator: GlotPress/4.1.0\n"
 "Language: nl\n"
-"Project-Id-Version: WordPress - 7.0.x - Development - Administration - Network Admin\n"
+"Project-Id-Version: WordPress - 7.1.x - Development - Administration - Network Admin\n"
+
+#: wp-admin/network/users.php:343
+msgid "No users were deleted because no user was selected for content reassignment."
+msgstr "Er zijn geen gebruikers verwijderd omdat er geen gebruiker was geselecteerd voor content hertoewijzing."
 
 #: wp-admin/network/sites.php:361
 msgid "Site flagged for deletion."
@@ -675,7 +679,7 @@ msgstr "Pad"
 msgid "Domain"
 msgstr "domein"
 
-#: wp-admin/network/user-new.php:29 wp-admin/network/users.php:270
+#: wp-admin/network/user-new.php:29 wp-admin/network/users.php:297
 msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\">Documentation on Network Users</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Users_Screen\">Documentatie over netwerkgebruikers</a>"
 
@@ -743,7 +747,7 @@ msgstr "Voeg het volgende toe aan je %1$s bestand in %2$s, en <strong>vervang</s
 msgid "Confirm your action"
 msgstr "Je actie bevestigen"
 
-#: wp-admin/network/users.php:260
+#: wp-admin/network/users.php:287
 msgid "Hover over any user on the list to make the edit links appear. The Edit link on the left will take you to their Edit User profile page; the Edit link on the right by any site name goes to an Edit Site screen for that site."
 msgstr "Hoveren over een gebruiker in de lijst om de bewerkingslinks te laten verschijnen. De bewerkingslink aan de linkerkant brengt je naar hun bewerkingsprofielpagina; de bewerkingslink aan de rechterkant bij een sitenaam gaat naar een Bewerksite scherm voor die site."
 
@@ -1098,8 +1102,8 @@ msgid "The choice of subdirectory sites is disabled if this setup is more than a
 msgstr "De keuze van submap-sites is uitgeschakeld als deze setup meer dan een maand oud is, vanwege permalink-problemen met &#8220;/blog/&#8221; van de hoofdsite. Dit uitschakelen zal in een toekomstige versie aangepast worden."
 
 #: wp-admin/network.php:65
-msgid "Once you add this code and refresh your browser, multisite should be enabled. This screen, now in the Network Admin navigation menu, will keep an archive of the added code. You can toggle between Network Admin and Site Admin by clicking on the Network Admin or an individual site name under the My Sites dropdown in the Toolbar."
-msgstr "Als je deze code eenmaal toegevoegd hebt en je browser vernieuwt, zal de multisite ingeschakeld zijn. Dit scherm, nu in het Netwerkbeheer navigatiemenu, zal een archief bewaren van de toegevoegde code. Je kunt togglen tussen Netwerkbeheer en Sitebeheer door te klikken op Netwerkbeheer of individuele sitenaam onder de Mijn sites dropdown in de toolbar."
+msgid "Once you add this code and refresh your browser, multisite should be enabled. This screen, now in the Network Admin navigation menu, will keep an archive of the added code. You can switch between Network Admin and Site Admin by clicking on the Network Admin or an individual site name under the My Sites dropdown in the Toolbar."
+msgstr "Zodra je deze code toevoegt en je browser ververst, zou multisite ingeschakeld moeten zijn. Dit scherm, nu in het navigatiemenu van Netwerk beheer, bewaart een archief van de toegevoegde code. Je kunt wisselen tussen Netwerk beheer en Site beheer door te klikken op Netwerk beheer of op de naam van een individuele site onder de Mijn sites dropdown in de toolbar."
 
 #: wp-admin/network.php:63
 msgid "The next screen for Network Setup will give you individually-generated lines of code to add to your wp-config.php and .htaccess files. Make sure the settings of your FTP client make files starting with a dot visible, so that you can find .htaccess; you may have to create this file if it really is not there. Make backup copies of those two files."
@@ -1122,7 +1126,7 @@ msgid "The Network creation panel is not for WordPress MU networks."
 msgstr "Het netwerk aanmaakpaneel is niet voor WordPress MU netwerken."
 
 #. translators: %s: User login.
-#: wp-admin/network/users.php:87 wp-admin/network/users.php:126
+#: wp-admin/network/users.php:88 wp-admin/network/users.php:127
 msgid "Warning! User cannot be modified. The user %s is a network administrator."
 msgstr "Let op! Gebruiker kan niet worden aangepast. De gebruiker %s is een netwerk administrator."
 
@@ -1142,11 +1146,11 @@ msgstr "Bij hoveren over elke site verschijnen er zeven opties (drie voor de pri
 msgid "Operational settings has fields for the network&#8217;s name and admin email."
 msgstr "Operationele instellingen bevatten velden voor de netwerknaam en beheerder e-mail."
 
-#: wp-admin/network/users.php:263
+#: wp-admin/network/users.php:290
 msgid "The bulk action will permanently delete selected users, or mark/unmark those selected as spam. Spam users will have posts removed and will be unable to sign up again with the same email addresses."
 msgstr "De bulkactie zal de geselecteerde gebruikers permanent verwijderen, of de geselecteerde markeren/demarkeren als spam. De berichten van de spam-gebruikers zullen verwijderd worden. Spam gebruikers kunnen zich niet opnieuw aanmelden met dezelfde e-mailadressen."
 
-#: wp-admin/network/users.php:261
+#: wp-admin/network/users.php:288
 msgid "You can also go to the user&#8217;s profile page by clicking on the individual username."
 msgstr "Je kunt ook naar de gebruikers profielpagina gaan door op de individuele gebruikersnaam te klikken."
 
@@ -1154,7 +1158,7 @@ msgstr "Je kunt ook naar de gebruikers profielpagina gaan door op de individuele
 msgid "Upload settings control the size of the uploaded files and the amount of available upload space for each site. You can change the default value for specific sites when you edit a particular site. Allowed file types are also listed (space separated only)."
 msgstr "Upload instellingen regelen de grootte van de geüploade bestanden en de hoeveelheid beschikbare uploadruimte voor elke site. Je kunt de standaardwaarde voor specifieke sites wijzigen wanneer je een bepaalde site bewerkt. Toegestane bestandstypen worden ook vermeld (alleen spatie gescheiden)."
 
-#: wp-admin/network/users.php:264
+#: wp-admin/network/users.php:291
 msgid "You can make an existing user an additional super admin by going to the Edit User profile page and checking the box to grant that privilege."
 msgstr "Je kunt van een bestaande gebruiker een extra superbeheerder maken door naar de pagina gebruikersprofiel bewerken te gaan en het vakje aan te vinken om dat privilege toe te kennen."
 
@@ -1162,11 +1166,11 @@ msgstr "Je kunt van een bestaande gebruiker een extra superbeheerder maken door 
 msgid "Users who are signed up to the network without a site are added as subscribers to the main or primary dashboard site, giving them profile pages to manage their accounts. These users will only see Dashboard and My Sites in the main navigation until a site is created for them."
 msgstr "Gebruikers die zijn geregistreerd op het netwerk zonder een eigen site, worden toegevoegd als inschrijvers op de hoofdsite, ze krijgen toegang in het Dashboard op hun eigen profiel pagina om hun account te beheren. Deze gebruikers zullen het Dashboard en Mijn sites alleen kunnen zien in de hoofdnavigatie, tot zijzelf een eigen site zullen bezitten."
 
-#: wp-admin/network/users.php:262
+#: wp-admin/network/users.php:289
 msgid "You can sort the table by clicking on any of the table headings and switch between list and excerpt views by using the icons above the users list."
 msgstr "Je kunt de tabel sorteren door op een van de kopteksten te klikken en schakelen tussen de lijst- en samenvatting weergave met de iconen boven de gebruikerslijst."
 
-#: wp-admin/network/users.php:259
+#: wp-admin/network/users.php:286
 msgid "This table shows all users across the network and the sites to which they are assigned."
 msgstr "Deze tabel toont alle gebruikers in het netwerk en de sites waar ze bij horen."
 
@@ -1223,7 +1227,7 @@ msgstr "Als je domeinen wilt verbieden van site registraties. Een domein per reg
 msgid "If you want to limit site registrations to certain domains. One domain per line."
 msgstr "Als je de site registraties wilt beperken tot bepaalde domeinen. Een domein per regel."
 
-#: wp-admin/network/users.php:294
+#: wp-admin/network/users.php:321
 msgid "Users removed from spam."
 msgstr "Gebruikers verwijderd uit spam."
 
@@ -1243,11 +1247,11 @@ msgstr "Sites gemarkeerd als spam."
 msgid "Sites removed from spam."
 msgstr "Sites verwijderd uit spam."
 
-#: wp-admin/network/users.php:297
+#: wp-admin/network/users.php:324
 msgid "Users deleted."
 msgstr "Gebruikers verwijderd."
 
-#: wp-admin/network/users.php:291
+#: wp-admin/network/users.php:318
 msgid "Users marked as spam."
 msgstr "Gebruikers gemarkeerd als spam."
 
