@@ -39,24 +39,6 @@ add_action('wp_enqueue_scripts', function (): void {
     );
 });
 
-function renderFavicon(): void
-{
-    $faviconUrl = get_theme_file_uri(
-        'assets/images/favicon.png'
-    );
-
-    printf(
-        '<link rel="icon" href="%s" type="image/png" sizes="512x512">' . PHP_EOL,
-        esc_url($faviconUrl)
-    );
-}
-
-add_action(
-    'wp_head',
-    __NAMESPACE__ . '\\renderFavicon',
-    5
-);
-
 function translate(string $key): string
 {
     $language = currentLanguage();
@@ -243,6 +225,38 @@ function renderServiceCard(
         <h2 class="service-card__title"><?= $title ?></h2>
         <p class="service-card__text"><?= $text ?></p>
         <a href="<?= $linkUrl ?>" class="<?= $linkClasses ?>"><?= $linkText ?></a>
+    </div>
+    <?php
+}
+
+function renderFavicon(): void
+{
+    $faviconUrl = get_theme_file_uri(
+        'assets/images/favicon.png'
+    );
+
+    printf(
+        '<link rel="icon" href="%s" type="image/png" sizes="512x512">' . PHP_EOL,
+        esc_url($faviconUrl)
+    );
+}
+
+add_action(
+    'wp_head',
+    __NAMESPACE__ . '\\renderFavicon',
+    5
+);
+
+function renderCallout(string $icon, string $text, string $extraClass=''): void
+{
+    ?>
+    <div class="callout <?= trim($extraClass) ?>">
+        <div class="callout__media-container">
+            <?= $icon ?>
+        </div>
+        <div class="callout__content-container">
+            <?= $text ?>
+        </div>
     </div>
     <?php
 }

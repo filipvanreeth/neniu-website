@@ -1,0 +1,73 @@
+@use "../settings/colors" as colors;
+@use "../settings/typography" as typography;
+@use "sass:map";
+
+.callout {
+  $color: map.get(colors.$base-variation, 800);
+  margin: 2rem 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: map.get(colors.$base-variation, 100);
+  align-items: center;
+  border-radius: 0.5rem;
+  border: solid 1px $color;
+  overflow: hidden;
+
+  &__media-container {
+    display: grid;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    // border-right: solid 1px map.get(colors.$base-variation, 400);
+    background-color: $color;
+  }
+
+  &__icon {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 3rem;
+    height: auto;
+    color: colors.$white;
+  }
+
+  &__content-container {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    color: inherit;
+
+    p {
+      margin: 0;
+      padding: 0;
+      line-height: 1.35;
+    }
+
+    a {
+      color: inherit;
+      font-weight: normal;
+    }
+  }
+
+  &--accent {
+    $color: map.get(colors.$accent-variation, 800);
+    border-color: $color;
+    background-color: map.get(colors.$accent-variation, 100);
+    
+    .callout__media-container {
+        background-color: $color;
+    }
+  }
+  
+  &--prevention {
+    $color: map.get(colors.$prevention-variation, 800);
+    border-color: $color;
+    background-color: map.get(colors.$prevention-variation, 100);
+    
+    .callout__media-container {
+        background-color: $color;
+    }
+  }
+}
