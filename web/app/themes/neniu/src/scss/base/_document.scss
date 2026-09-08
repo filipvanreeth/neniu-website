@@ -11,12 +11,12 @@
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 1.45;
   
-  @include bp.from(lg) {
-    font-size: 1.125rem;
-  }
+//   @include bp.from(lg) {
+//     font-size: 1.125rem;
+//   }
 }
 
 .container {
