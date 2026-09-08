@@ -68,3 +68,4 @@ $currentUrl = get_permalink();
         </div>
     </div>
 </header>
+<main role="main">

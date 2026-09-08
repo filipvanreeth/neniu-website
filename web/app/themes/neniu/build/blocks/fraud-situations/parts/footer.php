@@ -3,6 +3,7 @@ use function Neniu\translate;
 use function Neniu\renderFooterNavMenu;
 ?>
 
+</main>
 <footer class="footer">
     <nav class="footer-nav-main">
         <div class="container container--constrained">
