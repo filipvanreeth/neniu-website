@@ -65,7 +65,7 @@ return [
     ],
     // Prevention section
     'prevention-section' => [
-        'badge-label' => 'Preventie',
+        'badge-label' => 'Prevention',
         'title' => 'Ensemble, prévenons la fraude',
         'text-lead' => "Mieux comprendre les méthodes utilisées par les fraudeurs permet de reconnaître plus rapidement les situations suspectes. C'est pourquoi NENIU organise des séances d'information, des ateliers et des démonstrations accessibles et axés sur la pratique, consacrés à la fraude en ligne et à la sécurité numérique.",
         'text' => "<p>À partir d'exemples concrets et reconnaissables, nos bénévoles expliquent comment les fraudeurs tentent de gagner la confiance de leurs victimes, quelles techniques ils utilisent et quels signaux doivent éveiller la vigilance. Différents sujets peuvent être abordés : l'hameçonnage, la fraude bancaire, les arnaques à l'amitié et à l'amour, les investissements frauduleux, l'usurpation d'identité, le piratage de comptes, les mots de passe et les réseaux sociaux.</p>
