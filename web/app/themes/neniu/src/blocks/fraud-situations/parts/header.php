@@ -44,12 +44,12 @@ $currentUrl = get_permalink();
                 </div>
                 <div class="header-nav-desktop__nav-container">
                     <ul class="header-nav-desktop__nav-language">
-                        <div class="header-nav-desktop__nav-language-items">
+                        <li class="header-nav-desktop__nav-language-items">
                             <a href="<?= $currentUrl . '?language=nl' ?>"
                                 class="header-nav-desktop__nav-language-item">nl</a>
                             <a href="<?= $currentUrl . '?language=fr' ?>"
                                 class="header-nav-desktop__nav-language-item">fr</a>
-                        </div>
+                        </li>
                     </ul>
                     <ul class="header-nav-desktop__nav-main">
                         <?php
@@ -68,3 +68,4 @@ $currentUrl = get_permalink();
         </div>
     </div>
 </header>
+<main role="main">
