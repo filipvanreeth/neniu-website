@@ -68,8 +68,7 @@ return [
         'title' => 'Samen fraude voorkomen',
         'text-lead' => 'Wie begrijpt hoe fraudeurs te werk gaan, kan verdachte situaties sneller herkennen. Daarom organiseert Neniu toegankelijke en praktijkgerichte infosessies, workshops en demonstraties over online fraude en digitale veiligheid.',
         'text' => '<p>Aan de hand van herkenbare voorbeelden laten onze vrijwilligers zien hoe fraudeurs vertrouwen proberen te winnen, welke technieken ze gebruiken en welke signalen je kunnen waarschuwen. Onderwerpen zoals phishing, bankfraude, vriendschaps- en liefdesfraude, frauduleuze beleggingen, identiteitsfraude, gehackte accounts, wachtwoorden en sociale media kunnen daarbij aan bod komen.</p>
-        <p>Onze activiteiten richten zich onder meer tot burgers, senioren, gezinnen, verenigingen, scholen, bedrijven, lokale besturen en professionals die met kwetsbare doelgroepen werken. We stemmen de inhoud af op de deelnemers en maken bewust ruimte voor vragen, interactie en praktijkvoorbeelden.</p>
-        <p>Wil je samen met Neniu een infosessie, workshop of andere preventieactiviteit organiseren? Neem contact met ons op. We bekijken graag wat het best aansluit bij jouw organisatie of doelgroep.</p>',
+        <p>Onze activiteiten richten zich onder meer tot burgers, senioren, gezinnen, verenigingen, scholen, bedrijven, lokale besturen en professionals die met kwetsbare doelgroepen werken. We stemmen de inhoud af op de deelnemers en maken bewust ruimte voor vragen, interactie en praktijkvoorbeelden.</p>',
         'callout-contact' => '<p>Wil je samen met Neniu een infosessie, workshop of andere preventieactiviteit organiseren? <a href="mailto:info@neniu.help?subject=Organiseren preventie-activiteit">Neem contact met ons op</a>. We bekijken graag wat het best aansluit bij jouw organisatie of doelgroep.</p>'
     ],
     // Contact section
