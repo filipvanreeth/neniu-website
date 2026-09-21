@@ -67,4 +67,16 @@
             color: $color;
         }
     }
+    
+    &--volunteers {
+        $color: map.get(colors.$volunteers-variation, 300);
+        
+        #{$self}__line {
+            background-color: $color;
+        }
+        
+        #{$self}__icon {
+            color: $color;
+        }
+    }
 }

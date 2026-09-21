@@ -4,6 +4,7 @@ $navItems = [
     'help' => 'Ik heb hulp nodig',
     'concerns' => 'Ik ben bezorgd',
     'prevention' => 'Samen voorkomen',
+    'volunteers' => 'Word vrijwilliger',
     'contact' => 'Contact',
 ];
 
@@ -12,6 +13,7 @@ return [
         'help' => $navItems['help'],
         'concerns' => $navItems['concerns'],
         'prevention' => $navItems['prevention'],
+        'volunteers' => $navItems['volunteers'],
         'contact' => $navItems['contact'],
     ],
     'footer-nav-help' => [
@@ -23,6 +25,7 @@ return [
     'footer-nav-about' => [
         'title' => 'Over Neniu',
         'who' => 'Wie is Neniu',
+        'volunteers' => $navItems['volunteers'],
         'contact' => $navItems['contact'],
     ],
     'hero-section' => [
@@ -70,6 +73,15 @@ return [
         'text' => '<p>Aan de hand van herkenbare voorbeelden laten onze vrijwilligers zien hoe fraudeurs vertrouwen proberen te winnen, welke technieken ze gebruiken en welke signalen je kunnen waarschuwen. Onderwerpen zoals phishing, bankfraude, vriendschaps- en liefdesfraude, frauduleuze beleggingen, identiteitsfraude, gehackte accounts, wachtwoorden en sociale media kunnen daarbij aan bod komen.</p>
         <p>Onze activiteiten richten zich onder meer tot burgers, senioren, gezinnen, verenigingen, scholen, bedrijven, lokale besturen en professionals die met kwetsbare doelgroepen werken. We stemmen de inhoud af op de deelnemers en maken bewust ruimte voor vragen, interactie en praktijkvoorbeelden.</p>',
         'callout-contact' => '<p>Wil je samen met Neniu een infosessie, workshop of andere preventieactiviteit organiseren? <a href="mailto:info@neniu.help?subject=Organiseren preventie-activiteit">Neem contact met ons op</a>. We bekijken graag wat het best aansluit bij jouw organisatie of doelgroep.</p>'
+    ],
+    // Volunteers section
+    'volunteers-section' => [
+        'badge-label' => 'Word vrijwilliger',
+        'title' => 'Maak als vrijwilliger mee het verschil',
+        'text-lead' => 'Online fraude raakt steeds meer mensen en de impact gaat vaak veel verder dan alleen financieel verlies. Daarom zoeken we vrijwilligers die samen met ons slachtoffers willen ondersteunen en mensen weerbaarder willen maken tegen online fraude.',
+        'text' => '<p>Bij Neniu kun je je op verschillende manieren inzetten: van slachtofferbegeleiding en preventie tot communicatie, administratie of technische ondersteuning. Je engagement stemmen we af op jouw beschikbare tijd, interesses en talenten. Of je nu regelmatig wilt meehelpen of slechts enkele uren per maand kunt vrijmaken: ook een beperkte inzet kan een waardevolle bijdrage betekenen.</p>
+        <p>Ervaring is mooi meegenomen, maar betrokkenheid, empathie en de wil om bij te leren vinden we minstens zo belangrijk.</p>',
+        'callout-contact' => '<p>Wil jij op jouw manier en op jouw tempo mee het verschil maken? <a href="mailto:info@neniu.help?subject=Ik wil vrijwilliger worden">Neem contact met ons op</a> en ontdek hoe jij deel kunt uitmaken van Neniu.'
     ],
     // Contact section
     'contact-section' => [

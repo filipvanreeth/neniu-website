@@ -36,5 +36,6 @@ include 'parts/hero.php';
 include 'parts/section-need-help.php';
 include 'parts/section-concerned.php';
 include 'parts/section-prevention.php';
+include 'parts/section-volunteers.php';
 include 'parts/section-contact.php';
 include 'parts/footer.php';

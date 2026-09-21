@@ -28,4 +28,10 @@
     color: map.get($color, 800);
     background-color: map.get($color, 200);
   }
+  
+  &--volunteers {
+    $color: colors.$volunteers-variation;
+    color: map.get($color, 800);
+    background-color: map.get($color, 200);
+  }
 }

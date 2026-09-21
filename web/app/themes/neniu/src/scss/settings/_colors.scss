@@ -5,6 +5,7 @@ $color-1: #1f3a5e;
 $color-2: #ee6c4d;
 $color-3: #4d908e;
 $color-4: #f2c14e;
+$color-5: #AF719D;
 $white: #ffffff;
 
 // Semantic
@@ -13,6 +14,7 @@ $accent: $color-2;
 $need-help: $color-2;
 $concerned: $color-3;
 $prevention: $color-4;
+$volunteers: $color-5;
 
 @function create-palette($base-color) {
   @return (
@@ -25,7 +27,7 @@ $prevention: $color-4;
     600: color.mix(white, $base-color, 23%, $method: oklch),
     700: color.mix(white, $base-color, 11%, $method: oklch),
     800: $base-color,
-    900: color.mix(black, $base-color, 18%, $method: oklch),
+    900: color.mix(black, $base-color, 15%, $method: oklch),
     950: color.mix(black, $base-color, 35%, $method: oklch)
   );
 }
@@ -34,3 +36,4 @@ $base-variation: create-palette($base);
 $accent-variation: create-palette($color-2);
 $concerned-variation: create-palette($color-3);
 $prevention-variation: create-palette($color-4);
+$volunteers-variation: create-palette($color-5);

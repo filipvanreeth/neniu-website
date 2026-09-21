@@ -41,6 +41,10 @@ use function Neniu\renderFooterNavMenu;
                             //     'link' => '#'
                             // ],
                             [
+                                'label' => translate('footer-nav-about.volunteers'),
+                                'link' => '#volunteers-section'
+                            ],
+                            [
                                 'label' => translate('footer-nav-about.contact'),
                                 'link' => '#contact'
                             ],

@@ -15,6 +15,10 @@ $navMain = [
         'link_url' => '#prevention-section'
     ],
     [
+        'link_label' => translate('header-nav-main.volunteers'),
+        'link_url' => '#volunteers-section'
+    ],
+    [
         'link_label' => translate('header-nav-main.contact'),
         'link_url' => '#contact-section'
     ],

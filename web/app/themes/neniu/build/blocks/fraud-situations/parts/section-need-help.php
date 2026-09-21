@@ -11,7 +11,10 @@ use function Neniu\renderCallout;
         <div class="service-section__inner">
             <div class="service-section__content">
                 <div class="service-section__badge">
-                    <?= renderBadge('need-help', translate('help-section.badge-label')) ?>
+                    <?= renderBadge(
+                        'need-help',
+                        translate('help-section.badge-label')
+                    ) ?>
                 </div>
                 <h2 class="service-section__title"><?= translate('help-section.title') ?></h2>
                 <p class="service-section__text-lead"><?= translate('help-section.text-lead') ?></p>

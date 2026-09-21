@@ -86,6 +86,10 @@ body {
   color: #f2c14e;
   background-color: rgb(99.0178003245%, 94.8863096351%, 86.2707131952%);
 }
+.badge--volunteers {
+  color: #AF719D;
+  background-color: rgb(93.406402119%, 87.3658113368%, 91.3372036112%);
+}
 
 .button {
   display: inline-flex;
@@ -165,6 +169,13 @@ body {
 }
 .callout--prevention .callout__media-container {
   background-color: #f2c14e;
+}
+.callout--volunteers {
+  border-color: #AF719D;
+  background-color: rgb(97.0224448346%, 94.2282985017%, 96.0483390351%);
+}
+.callout--volunteers .callout__media-container {
+  background-color: #AF719D;
 }
 
 .contact-card {
@@ -315,6 +326,10 @@ body {
 .hero-image__skew-border--prevention {
   background-color: #f2c14e;
 }
+.hero-image__skew-border--volunteers {
+  background-color: #AF719D;
+  rotate: 2.5deg;
+}
 
 .icon-divider {
   margin: 0 auto;
@@ -359,6 +374,12 @@ body {
 }
 .icon-divider--prevention .icon-divider__icon {
   color: rgb(98.3548489442%, 91.5689566096%, 77.3999093166%);
+}
+.icon-divider--volunteers .icon-divider__line {
+  background-color: rgb(89.1263189273%, 79.4469689242%, 85.8840631031%);
+}
+.icon-divider--volunteers .icon-divider__icon {
+  color: rgb(89.1263189273%, 79.4469689242%, 85.8840631031%);
 }
 
 .contact-cards {
@@ -735,7 +756,15 @@ body {
   }
 }
 .service-section--prevention .service-section__text-lead {
-  color: #f2c14e;
+  color: rgb(76.4437531674%, 60.7607382071%, 23.95366228%);
+}
+.service-section--volunteers .service-section__text-lead {
+  color: #AF719D;
+}
+@container service-section (width >= 64rem) {
+  .service-section--volunteers .service-section__inner {
+    grid-template-areas: "media content";
+  }
 }
 
 .footer {

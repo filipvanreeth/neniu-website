@@ -70,4 +70,14 @@
         background-color: $color;
     }
   }
+  
+  &--volunteers {
+    $color: map.get(colors.$volunteers-variation, 800);
+    border-color: $color;
+    background-color: map.get(colors.$volunteers-variation, 100);
+    
+    .callout__media-container {
+        background-color: $color;
+    }
+  }
 }

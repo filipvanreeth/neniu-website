@@ -1,6 +1,7 @@
 @use "../settings/breakpoints" as bp;
 @use "../settings/colors" as colors;
 @use "../settings/typography" as typography;
+@use "sass:map";
 
 .service-section {
   $self: &;
@@ -87,7 +88,19 @@
 
   &--prevention {
     #{$self}__text-lead {
-      color: colors.$prevention;
+      color: map-get(colors.$prevention-variation, 900);
+    }
+  }
+  
+  &--volunteers {
+    #{$self}__text-lead {
+      color: colors.$volunteers;
+    }
+
+    #{$self}__inner {
+      @include bp.container-from(lg, service-section) {
+        grid-template-areas: "media content";
+      }
     }
   }
 }

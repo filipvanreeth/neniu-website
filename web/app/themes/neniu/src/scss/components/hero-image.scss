@@ -44,5 +44,10 @@
       &--prevention {
         background-color: colors.$prevention;
       }
+      
+      &--volunteers {
+        background-color: colors.$volunteers;
+        rotate: 2.5deg;
+      }
     }
   }
