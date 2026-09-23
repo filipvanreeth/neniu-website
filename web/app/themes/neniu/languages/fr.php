@@ -4,6 +4,7 @@ $navItems = [
     'help' => "J'ai besoin d'aide",
     'concerns' => 'Je suis inquiet/inquiète',
     'prevention' => 'Ensemble, prévenons la fraude',
+    'volunteers' => 'Devenez bénévole',
     'contact' => 'Contact',
 ];
 
@@ -12,6 +13,7 @@ return [
         'help' => $navItems['help'],
         'concerns' => $navItems['concerns'],
         'prevention' => $navItems['prevention'],
+        'volunteers' => $navItems['volunteers'],
         'contact' => $navItems['contact'],
     ],
     'footer-nav-help' => [
@@ -23,6 +25,7 @@ return [
     'footer-nav-about' => [
         'title' => 'A propos de Neniu',
         'who' => 'Qui sommes-nous',
+        'volunteers' => $navItems['volunteers'],
         'contact' => $navItems['contact'],
     ],
     'hero-section' => [
@@ -71,6 +74,15 @@ return [
         'text' => "<p>À partir d'exemples concrets et reconnaissables, nos bénévoles expliquent comment les fraudeurs tentent de gagner la confiance de leurs victimes, quelles techniques ils utilisent et quels signaux doivent éveiller la vigilance. Différents sujets peuvent être abordés : l'hameçonnage, la fraude bancaire, les arnaques à l'amitié et à l'amour, les investissements frauduleux, l'usurpation d'identité, le piratage de comptes, les mots de passe et les réseaux sociaux.</p>
         <p>Nos activités s'adressent notamment aux citoyens, aux seniors, aux familles, aux associations, aux écoles, aux entreprises, aux administrations locales et aux professionnels travaillant avec des publics vulnérables. Nous adaptons le contenu aux participants et accordons une place importante aux questions, aux échanges et aux exemples pratiques.</p>",
         'callout-contact' => "<p>Vous souhaitez organiser avec Neniu une séance d'information, un atelier ou une autre activité de prévention ? <a href=\"mailto:info@neniu.help?subject=Organisation d'une activité de prévention\">Contactez-nous</a>. Nous examinerons volontiers la formule qui correspond le mieux à votre organisation ou à votre public.</p>"
+    ],
+    // Volunteers section
+    'volunteers-section' => [
+        'badge-label' => 'Devenez bénévole',
+        'title' => 'Faites la différence en tant que bénévole',
+        'text-lead' => "La fraude en ligne touche de plus en plus de personnes et ses conséquences vont souvent bien au-delà de la seule perte financière. C'est pourquoi nous recherchons des bénévoles qui souhaitent, avec nous, soutenir les victimes et aider le public à mieux se protéger contre la fraude en ligne.",
+        'text' => "<p>Chez Neniu, vous pouvez vous engager de différentes manières : accompagnement des victimes, prévention, communication, administration ou soutien technique. Nous adaptons votre engagement à votre disponibilité, à vos centres d'intérêt et à vos compétences. Que vous souhaitiez nous aider régulièrement ou seulement quelques heures par mois, même une contribution limitée peut être précieuse.</p>
+        <p>Une expérience préalable est un plus, mais nous accordons tout autant d'importance à l'engagement, à l'empathie et à l'envie d'apprendre.</p>",
+        'callout-contact' => '<p>Vous souhaitez, à votre manière et à votre rythme, contribuer à faire la différence ? <a href="mailto:info@neniu.help?subject=Devenez bénévole">Contactez-nous</a> et découvrez comment rejoindre Neniu.'
     ],
     // Contact section
     'contact-section' => [
