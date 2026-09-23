@@ -32,7 +32,7 @@
   &__content {
     grid-area: content;
   }
-  
+
   &__badge {
     margin-bottom: 1rem;
   }
@@ -88,10 +88,10 @@
 
   &--prevention {
     #{$self}__text-lead {
-      color: map-get(colors.$prevention-variation, 900);
+      color: map.get(colors.$prevention-variation, 900);
     }
   }
-  
+
   &--volunteers {
     #{$self}__text-lead {
       color: colors.$volunteers;

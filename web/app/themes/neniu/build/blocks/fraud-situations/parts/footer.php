@@ -11,7 +11,8 @@ use function Neniu\renderFooterNavMenu;
                 <div class="footer-nav-main__content-container">
                     <h4>Neniu <?= translate('company-info.company-type') ?></h4>
                     <p>Haverenblok 123 • B-1980 Eppegem<br />
-                        <a href="mailto:info@neniu.help">info@neniu.help</a>
+                        <a href="mailto:info@neniu.help">info@neniu.help</a><br/>
+                        BE0507.729.870
                     </p>
                     <p class="copyrights">©2014 - <?= date('Y') ?></p>
                 </div>
