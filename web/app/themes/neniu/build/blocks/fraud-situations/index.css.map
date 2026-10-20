@@ -1,0 +1,1 @@
+{"version":3,"file":"blocks/fraud-situations/index.css","mappings":";;;AAAA;EACI;EACA;AACJ,C","sources":["webpack://neniu/./src/blocks/fraud-situations/editor.scss"],"sourcesContent":[".wp-block-neniu-cta-actions {\n    padding: 1rem;\n    border: 1px dashed var(--color-primary-300);\n}\n"],"names":[],"sourceRoot":""}

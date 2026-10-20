@@ -2,7 +2,6 @@
 use function Neniu\renderHeroImage;
 use function Neniu\renderIconDivider;
 use function Neniu\renderServiceCard;
-use function Neniu\renderCallout;
 use function Neniu\translate;
 ?>
 
